@@ -36,5 +36,5 @@ Examples:
 
 # Install
 ```
-curl https://raw.githubusercontent.com/onewesong/setOp/master/set_operator.py  -O /usr/local/bin/ && chmod +x /usr/local/bin/set_operator.py && set_operator.py -h
+bash -c 'curl https://raw.githubusercontent.com/onewesong/setOp/master/set_operator.py  -o /usr/local/bin/set_operator.py && chmod +x /usr/local/bin/set_operator.py && set_operator.py -h'
 ```
