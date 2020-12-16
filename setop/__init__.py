@@ -4,8 +4,7 @@
 import sys
 
 OPRATIONS = ['-', '&', '|', '^', '<', '>', '>=', '<=', '==', '(' ,')']
-fname = __file__.split('/')[-1]
-HELP_INFO = f'''
+HELP_INFO = '''
 Compared files with through python set operations.
 
 Support operations:
@@ -24,17 +23,17 @@ Features:
 
 Examples:
     1. compared from files
-        {fname} fpath1 - fpath2
-        {fname} 'fpath1 & fpath2'
-        {fname} '( fpath1 & fpath2 ) <= fpath3'
+        setop fpath1 - fpath2
+        setop 'fpath1 & fpath2'
+        setop '( fpath1 & fpath2 ) <= fpath3'
 
     2. compared from variables
     fish
-        ❯ {fname}  (seq 1 3|psub) '&' (seq 2 4|psub)
+        ❯ setop  (seq 1 3|psub) '&' (seq 2 4|psub)
             2
             3
     bash
-        ❯ {fname}  <(seq 1 3) '&' <(seq 2 4)
+        ❯ setop  <(seq 1 3) '&' <(seq 2 4)
             2
             3 
 '''
